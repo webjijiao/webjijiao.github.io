@@ -99,10 +99,10 @@
   white-space:normal;
 }
 .my_mb{
-  margin-bottom:2%;
+  margin-bottom:10%;
 }
 .my_mt{
-  margin-top:1%;
+  margin-top:10%;
 }
 @media (max-width: 767px) {
   .display_my_none {
@@ -198,3 +198,17 @@
 .my_pr_0{
   padding-right:0;
 }
+.my_p_all{
+  padding:20px 10% 20px;
+}
+/*写鼠标悬停显示  查看详情和立即购买----还没写好*/
+/*#mx2:hover #mx22{*/
+  /*display:block;*/
+  /*background-color:red;*/
+/*}*/
+
+
+/*.display_none{*/
+  /*display:none;*/
+/*}*/
+

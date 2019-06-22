@@ -246,4 +246,40 @@
         padding-right:48px;
     }
 }
+.gwd:hover{
+    background-color:white;
+    border:1px solid #000;
+}
 
+.gwd:hover span>a{
+    color:#000;
+}
+.gwd:hover span{
+    color:#000;
+}
+.plun:hover{
+    background-color:#000;
+    border:1px solid #000;
+}
+.plun:hover span>a{
+    color:#fff;
+}
+.xin .iconfont{
+    font-family: "iconfont" !important;
+    font-size: 35px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.aaa:hover{
+    text-decoration: none;
+    color: #000;
+}
+.nosed{
+    border:2px solid #e2e3e5;
+}
+.sed{
+    border:2px solid #000;
+}

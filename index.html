@@ -12,15 +12,20 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/ysl_comm.css" />
     <link rel="stylesheet" href="css/ysl_shouye.css" />
+    <link rel="stylesheet" href="css/ysl_xiangshui.css" />
 </head>
 
 <body>
+<div class="container-fluid">
     <header>
         <iframe class="my_header" src="ysl_header.html" frameborder="0" scrolling="no"></iframe>
     </header>
-    <div class="container-fluid">
+
         <!--轮播图-->
         <div class="my_bg">
             <div class="carousel" id="lunbotu" data-ride="carousel ">
@@ -63,19 +68,19 @@
             <p class="my_lg font-weight-bold text-center ">YSL FAVORITES</p>
             <p class="my_lg font-weight-bold text-center ">明星产品</p>
         </div>
-        <div class="navbar navbar-expand mt-4 my_line">
+        <div class="navbar navbar-expand mt-5 my_line">
             <ul class="navbar-nav list-unstyled my_center">
-                <li class="nav-item">
-                    <a class="nav-link text-muted my_small" href="#">彩妆</a>
+                <li class="nav-item mx-2 mb-4">
+                    <a class="nav-link text-muted my_small my_font_14" href="#">彩妆</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted my_small" href="#">香水</a>
+                <li class="nav-item mx-2 mb-4">
+                    <a class="nav-link text-muted my_small my_font_14" href="#">香水</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted my_small" href="#">尊享礼盒</a>
+                <li class="nav-item mx-2 mb-4">
+                    <a class="nav-link text-muted my_small my_font_14" href="#">尊享礼盒</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted my_small" href="#">护肤</a>
+                <li class="nav-item mx-2 mb-4">
+                    <a class="nav-link text-muted my_small my_font_14" href="#">护肤</a>
                 </li>
             </ul>
         </div>
@@ -85,59 +90,68 @@
             <div class="col-lg-8 col-sm-12">
                 <div class="row w-100">
                     <div class="col-md-5">
-                        <img class="w-100 display-xs-none" src="img/shouye/mxcaizhuang.jpg" alt="" />
+                        <img title="彩妆"class="w-100 display-xs-none" src="img/shouye/mxcaizhuang.jpg" alt="" />
                     </div>
                     <div class="col-md-7 pl-3">
-                        <div class="row w-100">
+                        <div class="row w-100 op">
                             <div class="col-md-4 my_xxs_size my_small_p_none">
-                                <div class="text-center">
-                                    <img class="w-100 mb-2" src="img/shouye/mingxing1.jpg" alt="" />
+                                <div id="mx1" class="text-center">
+                                    <img id="mx11"class="w-100 mb-2" src="img/shouye/mingxing1.jpg" alt="" />
                                     <span class="w-100 "><a href=""><img src="img/shouye/fendi1.png" alt="" /></a><a
                                             href=""><img src="img/shouye/fendi2.png" alt="" /></a><a href=""><img
                                                 src="img/shouye/fendi3.png" alt="" /></a><a href=""><img
                                                 src="img/shouye/fendi4.png" alt="" /></a><a href=""><img
                                                 src="img/shouye/fendi5.png" alt="" /></a></span>
                                     <div class="mt-1 text-center">
-                                        <a class="d-block text-center my_small font_black font-weight-bold text-truncate "
+                                        <a class="d-block mt-4 text-center my_small font_black font-weight-bold text-truncate "
                                             href="">ALL
                                             HOURS FOUNDATION</a>
                                         <a class=" text-truncate d-block text-center mt-1 my_small font_black font-weight-bold"
                                             href="">圣罗兰恒颜无瑕粉底液</a>
-                                        <a class="d-block my-2 text-center my_small text-muted" href="">高遮瑕.超持久.不斑驳</a>
+                                        <a class="my-4 d-block text-center my_small text-muted" href="">高遮瑕.超持久.不斑驳</a>
                                         <span><img src="img/shouye/fendixing.png" alt="" /> | ￥580</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 my_xxs_size my_small_p_none">
-                                <div class="text-center">
-                                    <img class="w-100 mb-2" src="img/shouye/mingxing2.jpg" alt="" />
+                                <div id="mx2" class="text-center">
+                                    <img id="mx21" class="w-100 mb-2" src="img/shouye/mingxing2.jpg" alt="" />
                                     <span class="w-100"><img src="img/shouye/kouhong11.png" alt="" /><img
                                             src="img/shouye/kouhong12.png" alt="" /><img src="img/shouye/kouhong13.png"
                                             alt="" /><img src="img/shouye/kouhong14.png" alt="" /><img
                                             src="img/shouye/kouhong15.png" alt="" /></span>
                                     <div class="mt-1 text-center">
-                                        <a class="d-block text-center my_small font_black font-weight-bold text-truncate"
+                                        <a class="mt-4 d-block text-center my_small font_black font-weight-bold text-truncate"
                                             href="">ROUGE PUR COUTURE</a>
                                         <a class=" text-truncate d-block my_small mt-1 text-center font_black font-weight-bold"
                                             href="">圣罗兰纯口红</a>
-                                        <a class="d-block my-2 my_small text-muted text-center" href="">高定设计，馥郁纯正</a>
+                                        <a class="d-block my-4 my_small text-muted text-center" href="">高定设计，馥郁纯正</a>
                                         <span><img src="img/shouye/kouhong1xing.png" alt="" /> | ￥320</span>
                                     </div>
                                 </div>
+                                <!--写鼠标悬停显示  查看详情和立即购买-------还没写好-->
+                                <!--<div id="mx22"class="display_none">-->
+                                    <!--<div class="my_width2 text-centermy_height my_font_14 my_bg-black my_xxs_40">-->
+                                    <!--<span class="text-white">img<a class="text-white" href="#">立即购买</a></span>-->
+                                    <!--</div>-->
+                                    <!--<div class="my_width2 text-center my_height my_font_14 bg-white my_xxs_40">-->
+                                    <!--<span class="font_black">img<a class="text-white" href="#">立即购买</a></span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
                             </div>
                             <div class="col-md-4">
                                 <div class="text-center display_my_none">
-                                    <img class="w-100 mb-2" src="img/shouye/mingxing3.jpg" alt="" />
+                                    <img id="mx3" class="w-100 mb-2" src="img/shouye/mingxing3.jpg" alt="" />
                                     <span class="w-100"><img src="img/shouye/kouhong21.png" alt="" /><img
                                             src="img/shouye/kouhong22.png" alt="" /><img src="img/shouye/kouhong23.png"
                                             alt="" /><img src="img/shouye/kouhong24.png" alt="" /><img
                                             src="img/shouye/kouhong25.png" alt="" /></span>
                                     <div class="mt-1 text-center">
-                                        <a class="d-block my_small text-center font_black font-weight-bold text-truncate"
+                                        <a class="mt-4 d-block my_small text-center font_black font-weight-bold text-truncate"
                                             href="">ROUGE VOLUPTÉ SHINE </a>
                                         <a class=" text-truncate d-block mt-1 my_small text-center font_black font-weight-bold"
                                             href="">圣罗兰莹亮纯魅唇膏</a>
-                                        <a class="d-block  my-2 my_small text-muted text-center" href="">莹亮色泽 时刻闪耀</a>
+                                        <a class="d-block  my-4 my_small text-muted text-center" href="">莹亮色泽 时刻闪耀</a>
                                         <span><img src="img/shouye/kouhong2xing.png" alt="" /> | ￥335</span>
                                     </div>
                                 </div>
@@ -159,48 +173,48 @@
                     <div class="row w-100">
                         <div class="col-md-3 my_p_r my_pl_0 my_mb my_small_p_none">
                             <div class="bg-white">
-                                <img class="my_big_size my_small_size" src="img/shouye/sousuo1.jpg" alt="" />
+                                <img title="彩妆" class="my_big_size my_small_size" src="img/shouye/sousuo1.jpg" alt="" />
                                 <div class="p-4 my_small_position pl-5 ">
                                     <a class="my_md font_black font-weight-bold" href="#">彩妆</a>
                                     <div class="text-muted my_small my_mt my_mb my_font_display">
                                         无论何时何地,一切随性而为,肆意释放,生而闪耀.#LIVETOSHINE</div>
-                                    <div class="display_my_none"><a class="font_black my_small my_a" href="#">了解详情</a>
+                                    <div class="mt-5 mb-3 display_my_none"><a class="font_black my_small my_a" href="#">了解详情</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 my_p_r my_pl_0 my_mb my_small_p_none">
                             <div class="bg-white w-100">
-                                <img class="my_big_size my_small_size" src="img/shouye/sousuo2.jpg" alt="" />
+                                <img title="香水" class="my_big_size my_small_size" src="img/shouye/sousuo2.jpg" alt="" />
                                 <div class="p-4 my_small_position pl-5">
                                     <a class="my_md font_black font-weight-bold" href="#">香水</a>
                                     <div class="text-muted my_small my_mt my_mb my_font_display">
                                         敢爱就来，恣意追逐天翻地覆的爱情冒险。#FOLLOW MY TRAIL</div>
-                                    <div class="display_my_none"><a class="font_black my_small my_a" href="#">了解详情</a>
+                                    <div class="mt-5 mb-3 display_my_none"><a class="font_black my_small my_a" href="#">了解详情</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 my_p_l my_pr_0 my_mb my_small_p_none">
                             <div class="bg-white w-100">
-                                <img class="my_big_size my_small_size" src="img/shouye/sousuo3.jpg" alt="" />
+                                <img title="礼盒" class="my_big_size my_small_size" src="img/shouye/sousuo3.jpg" alt="" />
                                 <div class="p-4 my_small_position pl-5">
                                     <a class="my_md font_black font-weight-bold" href="#">礼盒</a>
                                     <div class="text-muted my_small my_mt my_mb my_font_display">以YSL宠爱❤TA,把一切最好的都给TA MY
                                         ❤ YSL</div>
-                                    <div class="display_my_none"><a class="font_black my_small my_a" href="#">了解详情</a>
+                                    <div class="mt-5 mb-3 display_my_none"><a class="font_black my_small my_a" href="#">了解详情</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 my_p_l my_pr_0 my_mb my_small_p_none">
                             <div class="bg-white w-100">
-                                <img class="my_big_size my_small_size" src="img/shouye/sousuo4.jpg" alt="" />
+                                <img title="护肤" class="my_big_size my_small_size" src="img/shouye/sousuo4.jpg" alt="" />
                                 <div class="p-4 my_small_position pl-5">
                                     <a class="my_md font_black font-weight-bold" href="#">护肤</a>
                                     <div class="text-muted my_small my_mt my_mb my_font_display">
                                         超模绝密系列，YSL的后台秘密，即刻水润，瞬时平滑。平滑。滑</div>
-                                    <div class="display_my_none"><a class="font_black my_small my_a" href="#">了解详情</a>
+                                    <div class="mt-5 mb-3 display_my_none"><a class="font_black my_small my_a" href="#">了解详情</a>
                                     </div>
                                 </div>
                             </div>
@@ -221,12 +235,12 @@
                 <div class="col-lg-4 col-sm-6 my_xxs_size my_p_r">
                     <div class="bg-white w-10">
                         <div class="w-50">
-                            <img class="w-100 display_my_none" src="img/shouye/siren1.jpg" alt="" />
+                            <img title="MAKE IT YOURS<br>定制专属你的YSL" class="w-100 display_my_none" src="img/shouye/siren1.jpg" alt="" />
                         </div>
                         <div class="my_position my_xxs_p">
-                            <p class="font-weight-bold my_font_display">MAKE IT YOURS<br>定制专属你的YSL</p>
-                            <p class="my_small my_font_display">❤线上挑选产品-❤刻字礼遇-❤卡片定制-❤高定包装-定制专属你的YSL</p>
-                            <div class="display_my_none"><a class="my_small font_black my_a" href="#">立即定制</a></div>
+                            <p class="font-weight-bold my_font_display h6">MAKE IT YOURS<br>定制专属你的YSL</p>
+                            <p class="my_small my_font_display mt-4">❤线上挑选产品-❤刻字礼遇-❤卡片定制-❤高定包装-定制专属你的YSL</p>
+                            <div class="display_my_none my-5"><a class="my_small font_black my_a" href="#">立即定制</a></div>
                             <div class="display_my_none1 position_1"><a class="font_black" href="#">
                                     >
                                 </a></div>
@@ -236,12 +250,12 @@
                 <div class="col-lg-4 col-sm-6  my_xxs_size my_p_l">
                     <div class="bg-white w-100">
                         <div class="w-50 ">
-                            <img class="w-100 display_my_none" src="img/shouye/siren2.jpg" alt="" />
+                            <img title="ENGRAVING SERVICE<br>尊享刻字礼遇" class="w-100 display_my_none" src="img/shouye/siren2.jpg" alt="" />
                         </div>
                         <div class="my_position my_xxs_p">
                             <p class=" font-weight-bold my_font_display">ENGRAVING SERVICE<br>尊享刻字礼遇</p>
-                            <p class="my_small my_font_display">镌刻YSL明星口红/香水/气垫留下你的专属印记，表达你的爱</p>
-                            <div class="display_my_none"><a class="my_small font_black my_a" href="#">立即定制</a></div>
+                            <p class="my_small my_font_display mt-4">镌刻YSL明星口红/香水/气垫留下你的专属印记，表达你的爱</p>
+                            <div class="display_my_none my-5"><a class="my_small font_black my_a" href="#">立即定制</a></div>
                             <div class="display_my_none1 position_1"><a class="font_black" href="#">
                                     >
                                 </a></div>
@@ -261,40 +275,40 @@
                     <div class="row w-100">
                         <div class="col-md-4 my_mb my_pl_0 my_p_right my_small_p_none">
                             <div class="bg-white">
-                                <img class="my_big_size my_small_size" src="img/shouye/linggan1.jpg" alt="" />
+                                <img title="潮流杂志" class="my_big_size my_small_size" src="img/shouye/linggan1.jpg" alt="" />
                                 <div class="p-4 my_small_position">
-                                    <a class="my_md font_black font-weight-bold" href="#">潮流杂志</a><br>
-                                    <a class="text-truncate my_md font_black font-weight-bold" href="#">超强遮瑕 恒久待肌</a>
+                                    <a class="font_black font-weight-bold" href="#">潮流杂志</a><br>
+                                    <a class="text-truncate my_md font_black " href="#">超强遮瑕 恒久待肌</a>
                                     <div class="text-muted my_small my_mt my_mb my_font_display">YSL恒久粉底液 全新上市,超强遮瑕
                                         恒久待肌,你值得最好的。FOR YOU YSL</div>
-                                    <div class="display_my_none"><a class="font_black my_small my_a" href="#">阅读全文</a>
+                                    <div class="display_my_none mb-4"><a class="font_black my_small my_a" href="#">阅读全文</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 my_mb my_pl_0 my_p_right my_small_p_none">
                             <div class="bg-white">
-                                <img class="my_big_size my_small_size" src="img/shouye/linggan2.jpg" alt="" />
+                                <img title="潮流杂志" class="my_big_size my_small_size" src="img/shouye/linggan2.jpg" alt="" />
                                 <div class="p-4 my_small_position">
-                                    <a class="my_md font_black font-weight-bold" href="#">潮流杂志</a><br>
-                                    <a class="text-truncate my_md font_black font-weight-bold" href="#">以大胆唇色点亮妆容</a>
+                                    <a class="font_black font-weight-bold" href="#">潮流杂志</a><br>
+                                    <a class="text-truncate my_md font_black" href="#">以大胆唇色点亮妆容</a>
                                     <div class="text-muted my_small my_mt my_mb my_font_display">
                                         在YSL的色彩世界中，正红色优雅端庄，玫瑰色温柔知性，每种颜色都对着着不同的个性符号。今夏，YSL邀你一起打破常规，在唇妆中融入多重色彩，自由展现。
                                     </div>
-                                    <div class="display_my_none"><a class="font_black my_small my_a" href="#">阅读全文</a>
+                                    <div class="display_my_none mb-4"><a class="font_black my_small my_a" href="#">阅读全文</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 my_mb my_pl_0 my_p_right my_small_p_none">
                             <div class="bg-white">
-                                <img class="my_big_size my_small_size" src="img/shouye/linggan3.jpg" alt="" />
+                                <img title="潮流杂志" class="my_big_size my_small_size" src="img/shouye/linggan3.jpg" alt="" />
                                 <div class="p-4 my_small_position">
-                                    <a class="my_md font_black font-weight-bold" href="#">潮流杂志</a><br>
-                                    <a class="text-truncate my_md font_black font-weight-bold" href="#">为双唇赋予更多魅力</a>
+                                    <a class="font_black font-weight-bold" href="#">潮流杂志</a><br>
+                                    <a class="text-truncate my_md font_black" href="#">为双唇赋予更多魅力</a>
                                     <div class="text-muted my_small my_mt my_mb my_font_display">玩趣大胆，放肆激情，是Imagine
                                         Dragons的另类摇滚，也深深根植于YSL的DNA。他们为现代电子乐带来了彻底性的颠覆，这一点正如有双重功效的YSL夹心唇膏，打破常规，释放真我。</div>
-                                    <div class="display_my_none"><a class="font_black my_small my_a" href="#">阅读全文</a>
+                                    <div class="display_my_none mb-4"><a class="font_black my_small my_a" href="#">阅读全文</a>
                                     </div>
                                 </div>
                             </div>
@@ -312,33 +326,38 @@
                 <div class="col-lg-8 col-sm-12 w-100">
                     <div class="row w-100">
                         <div class="col-md-8 p-0">
-                            <div class="bg-white w-100">
-                                <img class="w-100" src="img/shouye/shipin.jpg" alt="" />
+                            <div class="bg-white w-100 h-100">
+                                <img title="REVEAL YOUR YSL BEAUTY" class="w-100" src="img/shouye/shipin.jpg" alt="" />
                             </div>
                         </div>
                         <div class="col-md-4 w-100 p-0">
-                            <div class="bg-white w-100 h-100 pl-4">
+                            <div class="bg-white w-100 h-100 my_p">
                                 <div class="display_xxs">
-                                    <p><a class="font_black h6" href="#">DARE OR DARE S3<br>EPISODE#1<br
+                                    <p><a class="font_black h5" href="#">DARE OR DARE S3<br>EPISODE#1<br
                                                 class="my_xx_none1">WATER PROVE 防水挑战<br>@YSL圣罗兰彩妆大使</a></p>
-                                    <p class="my_small text-muted my_font_display">黄子韬与Celine一起挑战防水哑光底妆，无惧风雨变幻全天妆容服帖</p>
-                                    <p class="mb-5 my_xxs_none1"><a href="#" class="my_small font_black my_a">了解详情</a>
+                                    <p class="my_small text-muted my_font_display my-4">黄子韬与Celine一起挑战防水哑光底妆，无惧风雨变幻全天妆容服帖</p>
+                                    <p class="mb-4 my_xxs_none1"><a href="#" class="my_xsmall font_black my_a">了解详情</a>
                                     </p>
                                     <p class="h6">黄子韬妆容单品</p>
                                     <span><a href="#" class="my_small font_black my_a">恒颜无瑕粉底液</a>
                                         &nbsp;<a href="#" class="my_small font_black my_a">恒颜无瑕粉底棒</a></span>
-                                    <div class="mt-2"><a href="#" class="my_small text-muted">点击即可购买妆容产品</a></div </div>
-                                        </div> </div> </div> </div> <div class="col-lg-2">
+                                    <div class="mt-2"><a href="#" class="my_small text-muted">点击即可购买妆容产品</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-2"></div>
+                mmkfdhufo
+            </div>
+        </div>
+
 
 
                     <footer>
                         <iframe class="my_footer" src="ysl_footer.html" frameborder="0" scrolling="no"></iframe>
                     </footer>
-
+</div>
 </body>
 
 </html>

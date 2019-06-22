@@ -12,16 +12,25 @@
     padding-left: 0;
 }
 .my_lg{
-     font-size:1.125rem;
+     font-size:1.5rem;
  }
-.my_small{
+.my_xsmall{
     font-size:0.75rem;
 }
+.my_small{
+    font-size:0.875rem;
+}
 .my_md{
-    font-size:0.9rem;
+    font-size:1.25rem;
+}
+.my_md1{
+    font-size:0.875rem;
 }
 .font_black{
     color:#000;
+}
+.font_white{
+    color:#fff;
 }
 .my_font_14{
     font-size:14px;
