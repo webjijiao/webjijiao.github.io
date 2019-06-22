@@ -1,0 +1,50 @@
+.my_header{
+    height:300px;
+}
+.my_footer{
+    height:300px;
+}
+/*css reset*/
+*{margin:0;padding:0;}
+/*通用的字号*/
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+.my_lg{
+     font-size:1.125rem;
+ }
+.my_small{
+    font-size:0.75rem;
+}
+.my_md{
+    font-size:0.9rem;
+}
+.font_black{
+    color:#000;
+}
+.my_font_14{
+    font-size:14px;
+}
+.my_font_18{
+    font-size:18px;
+}
+.my_mt_32{
+    margin-top:3rem;
+}
+/*手写媒体查询,控制iframe的宽高*/
+.my_header,.my_footer{width:100%;}
+.container {
+    width: 100%;
+    padding:0;
+    margin:0 auto;
+}
+.my_bg{
+    background-color:#f2f2f2;
+}
+.row{
+    margin:0;
+}
+.my_a{
+    text-decoration:underline;
+}
