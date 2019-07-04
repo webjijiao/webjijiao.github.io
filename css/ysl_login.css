@@ -1,0 +1,104 @@
+.in-size{
+    width:100%;
+    height:50px;
+    border:1px solid #dadada;
+}
+/*.display_1{*/
+    /*display:none;*/
+/*}*/
+.position_1{
+    position:absolute;
+    right:3%;
+}
+.display_0{
+    display:inline-block;
+    width:45%;
+    height:45px;
+    line-height:45px;
+
+}
+.display_0_w{
+    width:75%;
+}
+.display_0_w1{
+    width:65% !important ;
+}
+.my_b0{
+    border:1px solid
+}
+.my-mr-10{
+    margin-right:8%;
+}
+.my_middle{
+    vertical-align:middle;
+}
+.my-width40{
+    width:42%
+}
+.my-bb{
+    border:0.5px solid #000;
+    display:inline-block;
+}
+.my-ml-5{
+    margin-left:5%;
+}
+.my-mr-5{
+    margin-right:5%;
+}
+.my-bc {
+    border: 0.5px solid #eed;
+}
+.my-p-r{
+    border-right:1px solid  #dadada;
+}
+.my-pr-38{
+    padding-right:38px;
+}
+.my-pl-38{
+    padding-left:38px;
+}
+.mb-35{
+    margin-bottom:35px;
+}
+.mt-28{
+    margin-top:28px;
+}
+.mt-12{
+    margin-top:12px;
+}
+.my-pr-15{
+  padding-right:15px;
+}
+.my-w-bg{
+    width:100%
+    height:50%;
+    background-color:#f2f2f2;
+}
+.my-p-all{
+    padding:20px 30px 30px ;
+}
+.my-mb-10{
+    margin-bottom:8px;
+}
+.my-ho:hover{
+    background-color:#fff;
+    color:#000;
+    text-decoration: none;
+}
+.my-ho1:hover{
+    background-color:#000;
+    color:#fff;
+}
+@media (max-width: 1000px) {
+    .xs-5-dis {
+        width: 50% !important ;
+    }
+    .xs-1-dis{
+        width:100% !important;
+    }
+}
+@media (max-width: 767px) {
+    .xs-5-dis {
+        width: 100% !important ;
+    }
+}

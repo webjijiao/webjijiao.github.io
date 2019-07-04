@@ -36,6 +36,9 @@
     position:absolute;
     top:2px;left:2px;
 }
+.my_white{
+    background-color:#fff;
+}
 .my_height_18{
     display:inline-block;
     height:20px;
@@ -157,7 +160,7 @@
 }
 @media (min-width: 767px) {
     .my_big_none{
-        display:none;
+        display:none !important ;
     }
     .my_big_block{
         display:block;
@@ -260,6 +263,7 @@
 .plun:hover{
     background-color:#000;
     border:1px solid #000;
+    text-decoration: none;
 }
 .plun:hover span>a{
     color:#fff;

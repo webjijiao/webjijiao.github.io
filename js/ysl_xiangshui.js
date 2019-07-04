@@ -16,7 +16,7 @@ $(function(){
 $(function(){
     $(".dd").click(
         function(){
-        var $th=$(this).parent("div").siblings("div").children(["dd"]);
+        var $th=$(this).parent("div").siblings("div").children([".dd"]);
             if($(this).is(".sed")) {
                 $(this).addClass("nosed").removeClass("sed");
             }else if($(this).is(".nosed")) {
@@ -26,3 +26,11 @@ $(function(){
     }
     );
 });
+$(function(){
+    $(".kk").click(
+        function(){
+            $(this).children([".kks"]).toggleClass("my_white")
+        }
+    )
+
+})

@@ -8,16 +8,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!--导入css-->
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="shiliang/iconfont.css" />
     <!--导入3个js-->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/vue.js"></script>
-    <script src="js/index.js"></script>
+    <!--<script src="js/index.js"></script>-->
+
     <link rel="stylesheet" href="css/ysl_comm.css" />
-    <link rel="stylesheet" href="css/ysl_shouye.css" />
-    <link rel="stylesheet" href="css/ysl_xiangshui.css" />
+    <link rel="stylesheet" href="css/ysl_index.css" />
+    <link rel="stylesheet" href="css/ysl_xiangshui.css"/>
+    <link rel="stylesheet" href="css/ysl_login.css"/>
+    <link rel="stylesheet" href="css/ysl_zhuce.css"/>
 </head>
 
 <body>
@@ -28,7 +32,7 @@
 
         <!--轮播图-->
         <div class="my_bg">
-            <div class="carousel" id="lunbotu" data-ride="carousel ">
+            <div class="carousel" id="lunbotu" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="w-100 display_xs" src="img/shouye/lunbo1.jpg" alt="" />
@@ -36,8 +40,8 @@
                     <div class="carousel-item">
                         <img class="w-100 display_xs" src="img/shouye/lunbo2.jpg" alt="" />
                     </div>
-                    <div class="carousel-item">
-                        <img class="w-100 display_xs" src="img/shouye/lunbo3.jpg" alt="" />
+                    <div class="carousel-item" >
+                        <img class="w-100 display_xs" src="img/shouye/lunbo3.jpg" alt=""@click="xs" />
                     </div>
                     <div class="carousel-item">
                         <img class="w-100 display_xs" src="img/shouye/lunbo4.jpg" alt="" />
@@ -95,8 +99,9 @@
                     <div class="col-md-7 pl-3">
                         <div class="row w-100 op">
                             <div class="col-md-4 my_xxs_size my_small_p_none">
-                                <div id="mx1" class="text-center">
-                                    <img id="mx11"class="w-100 mb-2" src="img/shouye/mingxing1.jpg" alt="" />
+                                <div id="mx1" class="text-center position-relative hov">
+                                    <img id="mx11"class="hov1 w-100 mb-2" src="img/shouye/mingxing1.jpg" alt="" />
+                                    <div class="my-div-black font_white">新品</div>
                                     <span class="w-100 "><a href=""><img src="img/shouye/fendi1.png" alt="" /></a><a
                                             href=""><img src="img/shouye/fendi2.png" alt="" /></a><a href=""><img
                                                 src="img/shouye/fendi3.png" alt="" /></a><a href=""><img
@@ -111,11 +116,16 @@
                                         <a class="my-4 d-block text-center my_small text-muted" href="">高遮瑕.超持久.不斑驳</a>
                                         <span><img src="img/shouye/fendixing.png" alt="" /> | ￥580</span>
                                     </div>
+                                    <div class="w-100 h-75 text-center position-img-top display_none_all hov_div">
+                                        <a class="mb-3 display_0_w1 my-ho font_white display_0 my_border_black text-center my_small my_bg-black" href="#"><span class="iconfont icon-gouwudai4"></span> &nbsp;&nbsp;立即购买</a>
+                                        <a class="chan1 display_0_w1 display_0 my_border_black text-center my_small font_black my_white " href="#"><span class="iconfont icon-gouwudai4"></span> &nbsp;&nbsp;查看详情</a>
+                                    </div>
+                                    <a class="my_big_none mt-4 display_0_w1 my-ho font_white display_0 my_border_black text-center my_small my_bg-black" href="#"><span class="iconfont icon-gouwudai4"></span> &nbsp;&nbsp;立即购买</a>
                                 </div>
                             </div>
                             <div class="col-md-4 my_xxs_size my_small_p_none">
-                                <div id="mx2" class="text-center">
-                                    <img id="mx21" class="w-100 mb-2" src="img/shouye/mingxing2.jpg" alt="" />
+                                <div id="mx2" class="text-center hov">
+                                    <img id="mx21" class="hov1 w-100 mb-2" src="img/shouye/mingxing2.jpg" alt="" />
                                     <span class="w-100"><img src="img/shouye/kouhong11.png" alt="" /><img
                                             src="img/shouye/kouhong12.png" alt="" /><img src="img/shouye/kouhong13.png"
                                             alt="" /><img src="img/shouye/kouhong14.png" alt="" /><img
@@ -128,20 +138,16 @@
                                         <a class="d-block my-4 my_small text-muted text-center" href="">高定设计，馥郁纯正</a>
                                         <span><img src="img/shouye/kouhong1xing.png" alt="" /> | ￥320</span>
                                     </div>
+                                    <div class="w-100 h-75 text-center position-img-top display_none_all hov_div">
+                                        <a class="mb-3 display_0_w1 my-ho font_white display_0 my_border_black text-center my_small my_bg-black" href="#"><span class="iconfont icon-gouwudai4"></span> &nbsp;&nbsp;立即购买</a>
+                                        <a class="chan1 display_0_w1 display_0 my_border_black text-center my_small font_black my_white " href="#"><span class="iconfont icon-gouwudai4"></span> &nbsp;&nbsp;查看详情</a>
+                                    </div>
+                                    <a class="my_big_none mt-4 display_0_w1 my-ho font_white display_0 my_border_black text-center my_small my_bg-black" href="#"><span class="iconfont icon-gouwudai4"></span> &nbsp;&nbsp;立即购买</a>
                                 </div>
-                                <!--写鼠标悬停显示  查看详情和立即购买-------还没写好-->
-                                <!--<div id="mx22"class="display_none">-->
-                                    <!--<div class="my_width2 text-centermy_height my_font_14 my_bg-black my_xxs_40">-->
-                                    <!--<span class="text-white">img<a class="text-white" href="#">立即购买</a></span>-->
-                                    <!--</div>-->
-                                    <!--<div class="my_width2 text-center my_height my_font_14 bg-white my_xxs_40">-->
-                                    <!--<span class="font_black">img<a class="text-white" href="#">立即购买</a></span>-->
-                                    <!--</div>-->
-                                <!--</div>-->
                             </div>
                             <div class="col-md-4">
-                                <div class="text-center display_my_none">
-                                    <img id="mx3" class="w-100 mb-2" src="img/shouye/mingxing3.jpg" alt="" />
+                                <div class="text-center display_my_none hov">
+                                    <img id="mx3" class="hov1 w-100 mb-2" src="img/shouye/mingxing3.jpg" alt="" />
                                     <span class="w-100"><img src="img/shouye/kouhong21.png" alt="" /><img
                                             src="img/shouye/kouhong22.png" alt="" /><img src="img/shouye/kouhong23.png"
                                             alt="" /><img src="img/shouye/kouhong24.png" alt="" /><img
@@ -153,6 +159,10 @@
                                             href="">圣罗兰莹亮纯魅唇膏</a>
                                         <a class="d-block  my-4 my_small text-muted text-center" href="">莹亮色泽 时刻闪耀</a>
                                         <span><img src="img/shouye/kouhong2xing.png" alt="" /> | ￥335</span>
+                                    </div>
+                                    <div class="w-100 h-75 text-center position-img-top display_none_all hov_div">
+                                        <a class="mb-3 display_0_w1 my-ho font_white display_0 my_border_black text-center my_small my_bg-black" href="#"><span class="iconfont icon-gouwudai4"></span> &nbsp;&nbsp;立即购买</a>
+                                        <a class="chan1 display_0_w1 display_0 my_border_black text-center my_small font_black my_white " href="#"><span class="iconfont icon-gouwudai4"></span> &nbsp;&nbsp;查看详情</a>
                                     </div>
                                 </div>
                             </div>
@@ -358,6 +368,7 @@
                         <iframe class="my_footer" src="ysl_footer.html" frameborder="0" scrolling="no"></iframe>
                     </footer>
 </div>
+<script src="js/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--导入视口-->
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"
+            />
+    <!--导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="shiliang/iconfont.css" />
+    <link rel="stylesheet" href="css/ysl_comm.css" />
+    <link rel="stylesheet" href="css/ysl_xiangshui.css"/>
+    <link rel="stylesheet" href="css/ysl_login.css"/>
+    <link rel="stylesheet" href="css/ysl_zhuce.css"/>
+    <!--导入3个js-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="shiliang/iconfont.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <iframe class="my_header" src="ysl_header.html" frameborder="0" scrolling="no"></iframe>
+    </header>
+    <ul class="breadcrumb bg-white">
+        <li class="breadcrumb-item my_xsmall text-muted">首页</li>
+        <li class="breadcrumb-item my_xsmall text-muted">用户登录</li>
+    </ul>
+    <div class="row w-100">
+        <div class="col-md-12 col-lg-9 xs-1-dis">
+            <div class="row w-100">
+                <div class="col-md-6 my-pr-38 my-p-r xs-5-dis">
+                    <h2 class="font-weight-bold mb-4">登录</h2>
+                    <div>
+                        <span class="my_small">您的邮箱/手机 <span class="text-danger">*</span></span><br>
+                        <input class="in-size mt-2" type="text" uname="phone"/>
+                        <span class="my_small text-danger display_1">请输入有效的邮箱或手机号码</span>
+                    </div>
+                    <div class="mt-4">
+                        <span class="my_small">密码 <span class="text-danger">*</span></span><br>
+                        <input class="in-size mt-2" type="text" uname="phone"/>
+                        <span class="my_small text-danger display_1">请输入正确的密码</span>
+                    </div>
+                    <div class="my-4 my_middle">
+                        <div class="my_sm_div kk"><div class="my_sm_div1 kks"></div></div> &nbsp;&nbsp;&nbsp;<span class="my_small">记住用户名</span>
+                        <span class="position_1"><a href="javascript:;" class="my_small font_black my_a">忘记密码?</a></span>
+                    </div>
+                    <div id="btna">
+                        <a @click="zhuce" class="my-ho1 font_black display_0 my_border_black text-center my_small my-mr-10" href="#">注册 ?</a>
+                        <a class="my-ho font_white display_0 my_border_black text-center my_small my_bg-black" href="#">立即登录</a>
+                    </div>
+                    <div class="mt-5">
+                        <div class="my-width40 my-bb mb-1 my-mr-5 my-bc"></div><span class="my_small">或</span><div class="my-width40 my-bb my-ml-5 mb-1 my-bc"></div>
+                    </div>
+                    <div>
+                        <p class="my_small mt-4">使用合作网站账号登录</p>
+                        <div class="my-display-inline mr-3 text-center">
+                            <a href="javascript:;">
+                                <svg class="icon my-bc" aria-hidden="true">
+                                <use xlink:href="#icon-qiyeduan-disanfangzhanghaobangding-weixin"></use>
+                                </svg>
+                            </a><br>
+                            <span class="my_small">微信</span>
+                        </div>
+                        <div class="my-display-inline mr-3 text-center">
+                            <a href="javascript:;">
+                                <svg class="icon my-bc" aria-hidden="true">
+                                <use xlink:href="#icon-qiyeduan-disanfangzhanghaobangding-qq"></use>
+                                </svg>
+                            </a><br>
+                            <span class="my_small ">QQ</span>
+                        </div>
+                        <div class="my-display-inline mr-3 text-center">
+                            <a href="javascript:;">
+                            <svg class="icon my-bc" aria-hidden="true">
+                                <use xlink:href="#icon-qiyeduan-disanfangzhanghaobangding-weibo"></use>
+                            </svg>
+                            </a><br>
+                            <span class="my_small">微博</span>
+                        </div>
+                        <div class="my-display-inline mr-3 text-center">
+                            <a href="javascript:;">
+                                <svg class="icon my-bc" aria-hidden="true">
+                                <use xlink:href="#icon-zhifubao"></use>
+                            </svg>
+                            </a><br>
+                            <span class="my_small">支付宝</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-pl-38 my-pr-15 xs-5-dis display_my_none">
+                    <div>
+                        <h4 class="font-weight-bold mb-35">注册成为圣罗兰官网会员即可尊享</h4>
+                        <h6 class="font-weight-bold">获取最新商品信息</h6>
+                        <p class="my_small text-muted mt-12">已注册邮箱将第一时间获取特价促销、<br>
+                            新品发布、礼盒套装及更多会员专享资讯。</p>
+                        <h6 class="font-weight-bold mt-28">订单历史记录</h6>
+                        <p class="my_small text-muted mt-12">查看您的订单详情，及时了解物流配送状态。</p>
+                        <h6 class="font-weight-bold mt-28">生日礼遇</h6>
+                        <p class="my_small text-muted mt-12 mt-12">完善个人生日信息，生日当月发现惊喜，<br>
+                            届时请查看已注册邮箱。</p>
+                        <h6 class="font-weight-bold mt-28">快速购买通道</h6>
+                        <p class="my_small text-muted mb-4 mt-12">我们会在您的账户中保存历史账单和配送信息，<br>
+                            使您方便快捷地购物。<br>
+                            <a href="javascript:;" class="my_a text-muted font_black">(了解更多隐私政策)</a></p>
+                        <a class="my-ho font_white display_0 my_border_black text-center my_small my_bg-black" href="#">创建账户</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 p-0">
+            <div class="my-w-bg text-center my-p-all display-none-1">
+                <h4>客户服务</h4>
+                <p class="my_small mt-4 my-mb-10">如果有任何问题，请联系我们</p>
+                <span class="my_small font-weight-bold">400-820-6362</span>
+                <p class="my_small my-mb-10 mt-2">（周一至周日 9:00-21:00）</p>
+                <p class="my_small mb-3">联系客服下单 惊喜送礼</p>
+                <a class="my-ho font_white display_0 display_0_w my_border_black text-center my_small my_bg-black" href="#">在线咨询</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <iframe class="my_footer" src="ysl_footer.html" frameborder="0" scrolling="no"></iframe>
+    </footer>
+</div>
+<script src="js/ysl_login.js"></script>
+<script src="js/ysl_xiangshui.js"></script>
+</body>
+</html>

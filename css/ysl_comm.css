@@ -57,3 +57,53 @@
 .my_a{
     text-decoration:underline;
 }
+.icon {
+    width: 40px;
+    height: 40px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    padding:5px;
+}
+.my-display-inline{
+    display:inline-block;
+}
+.my-div-black{
+    position:absolute;
+    top:0;
+    left:0;
+    width:30px;height:20px;
+    background-color:#000;
+    font-size:10px;
+    text-align:center;
+    line-height:20px;
+}
+.div_50{
+    width:50px;height:25px;
+    line-height:25px;
+}
+.position-img-center{
+    position:absolute;
+    top:25%;
+}
+.position-img-top{
+    position:absolute;
+    top:15%;
+}
+.chan1:hover{
+    background-color:#000;
+    border:1px solid #000;
+    color:#fff;
+    text-decoration: none;
+}
+.display_none_all{
+    display:none;
+}
+@media (min-width: 767px) {
+.hov:hover .hov1{
+    opacity:0.4;
+}
+.hov:hover .display_none_all{
+    display:block ;
+}
+}
