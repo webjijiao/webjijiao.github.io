@@ -20,6 +20,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/vue.js"></script>
+    <script src="js/ajax.js"></script>
     <script src="shiliang/iconfont.js"></script>
 </head>
 <body>
@@ -31,28 +32,28 @@
         <li class="breadcrumb-item my_xsmall text-muted">首页</li>
         <li class="breadcrumb-item my_xsmall text-muted">用户登录</li>
     </ul>
-    <div class="row w-100">
+    <div class="row w-100" id="log">
         <div class="col-md-12 col-lg-9 xs-1-dis">
             <div class="row w-100">
                 <div class="col-md-6 my-pr-38 my-p-r xs-5-dis">
                     <h2 class="font-weight-bold mb-4">登录</h2>
-                    <div>
+                    <div id="uname">
                         <span class="my_small">您的邮箱/手机 <span class="text-danger">*</span></span><br>
-                        <input class="in-size mt-2" type="text" uname="phone"/>
-                        <span class="my_small text-danger display_1">请输入有效的邮箱或手机号码</span>
+                        <input @blur="shiqu" class="uname in-size mt-2" type="text" v-model="uname"/>
+                        <span class="sp my_small text-danger display_1" >{{tishiuname}}</span>
                     </div>
-                    <div class="mt-4">
+                    <div class="mt-4" id="upwd">
                         <span class="my_small">密码 <span class="text-danger">*</span></span><br>
-                        <input class="in-size mt-2" type="text" uname="phone"/>
-                        <span class="my_small text-danger display_1">请输入正确的密码</span>
+                        <input class="upwd in-size mt-2" type="text" v-model="upwd"/>
+                        <span class="my_small text-danger display_1"></span>
                     </div>
                     <div class="my-4 my_middle">
                         <div class="my_sm_div kk"><div class="my_sm_div1 kks"></div></div> &nbsp;&nbsp;&nbsp;<span class="my_small">记住用户名</span>
                         <span class="position_1"><a href="javascript:;" class="my_small font_black my_a">忘记密码?</a></span>
                     </div>
-                    <div id="btna">
-                        <a @click="zhuce" class="my-ho1 font_black display_0 my_border_black text-center my_small my-mr-10" href="#">注册 ?</a>
-                        <a class="my-ho font_white display_0 my_border_black text-center my_small my_bg-black" href="#">立即登录</a>
+                    <div>
+                        <a  @click="zhuce" id="zc" class="my-ho1 font_black display_0 my_border_black text-center my_small my-mr-10" href="#">注册 ?</a>
+                        <a  id="dl" class="my-ho font_white display_0 my_border_black text-center my_small my_bg-black" href="#">立即登录</a>
                     </div>
                     <div class="mt-5">
                         <div class="my-width40 my-bb mb-1 my-mr-5 my-bc"></div><span class="my_small">或</span><div class="my-width40 my-bb my-ml-5 mb-1 my-bc"></div>
